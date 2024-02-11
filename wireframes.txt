@@ -1,5 +1,0 @@
-I think this article is very important when learning the basics of wireframing. 
-I think the most important part of the article was the "Get Feedback (Early)" portion.
-We as designers are not the only ones using the apps/websites that we are making. 
-We need to make sure that we are user-testing throughout the development of the app so that it is accessible,
-each button/link/feature works, and overall the design looks organized.
