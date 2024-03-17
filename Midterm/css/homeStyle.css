@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #fce5cb;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Desktop */
+
+/* Nav Bar */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 80px;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 100%;
+    position: relative;
+    /* try to figure out how to make fixed nav go infront of jumbotron */
+    background-color: #f7d9d3;
+}
+
+header a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.brand{
+    margin: 0;
+    font-weight: 300;
+    font-size: 46px;
+    font-family: "Dancing Script";
+    
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 1px;
+    margin: 0;
+    display: flex;
+    font-size: 22px;
+    font-weight: 300;
+    justify-content: center;
+}
+
+.menu li {
+    min-width: 5rem;
+}
+
+.menu li a {
+    display: block;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+}
+
+.menu li a:hover {
+    color: #EEE;
+    background-color: #e79796;
+}
+
+/* Jumbotron */
+
+.hero{
+    width: auto;
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero article h1{
+    position: absolute;
+    align-items: center;
+    bottom: 30%;
+    right: 100px;
+    width: 560px;
+    height: 220px;
+    padding: 3%;
+    border: 2px solid rgb(255, 208, 181, 0.6);
+    background-color: rgb(255, 208, 181, 0.6);
+    border-radius: 2%;
+    font-weight: 330;
+    color: #5e5050; 
+    font-size: 32px;
+}
+
+.hero article img{
+    position: absolute;
+    left: 150px;
+    bottom: 11%;
+    width: 540px;
+    height: 570px;
+    border: 6px dotted rgb(244, 191, 160);
+    border-radius: 20%;
+
+
+} 
+
+
+/* Projects Section */
+
+body a{
+    color: black;
+    text-decoration: none;
+}
+.projectName{
+    margin-top: 40px;
+    padding: 0 2rem;
+    margin: 2;
+    font-weight: 600;
+    font-size: 55px;
+    font-family: "Dancing Script";;
+}
+.projects{
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.thumb{
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 10%;
+    margin: 0px auto;
+}
+
+.thumb img{
+    height: 220px;
+    width: 360px;
+    border: 3px dotted #cd8685;
+    border-radius: 4%;
+}
+
+h3{
+    font-size: 20px
+}
+
+button, a.info{
+    padding: 10px 18px;
+    height: 90px;
+    width: 95px;
+    border: 2px solid #e79f9e;
+    background-color: #f7d9d3;
+    font-weight: 100;
+    font-size: 17px;
+    border-radius: 20%;
+    cursor: pointer;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: all linear;
+}
+
+button{
+    margin-top: 90px;
+
+}
+
+button:hover{
+    background-color: #f2acab;
+}
+
+
+/* Footer */
+footer{
+    margin-top: 70px;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #f7ddd7;
+    min-height: 70px;
+}
+
+/* Social media icons from W3 Schools */
+footer .fa {
+    padding: 15px;
+    font-size: 26px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 24px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: #e79796;
+    color: white;
+}
+
+.fa-google {
+    background: #e79796;
+    color: white;
+  }
+
+.fa-linkedin {
+    background: #e79796;
+    color: white;
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 768px) {
+    .hero{
+        flex-direction: column;
+    }
+
+    .menu{
+        font-size: 20px;
+    }
+
+    .brand{
+        font-size: 40px;
+    }
+
+    .thumb{
+        flex-basis: 52%;
+        width: 620px;
+    }
+
+    h2{
+        font-size: 60px;
+        margin-left: 1%;
+    }
+
+    button{
+        margin-top: 37px;
+        margin-left: 40%;
+        margin-bottom: 50px;
+        width: 120px;
+        height: 85px;
+        font-size: 20px;
+    }
+
+    .hero article h1{
+        bottom: 1%;
+        margin-bottom: 5px;
+        right: 0px;
+        width: 550px;
+        height: 130px;
+        border: 2px solid rgb(255, 208, 181, 0.8);
+        background-color: rgb(255, 208, 181, 0.8);
+        font-size: 28px;
+    }
+    
+    .hero article img{
+        bottom: 5%;
+        width: 420px;
+        height: 430px;
+    } 
+
+    footer{
+        margin-top: 0px;
+    }
+}
