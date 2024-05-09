@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PetPals Pet Services</title>
+    <link rel="stylesheet" href="../css/profile.css" />
+ <!-- Nav Bar Boxicons Link -->
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <div class="navbar">
+    <div class="company-details">
+    <i class='bx bxs-dog' id="dog"></i>
+        <div class="company_name">PetPals</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+      <ul class="nav-list">
+        <li>
+          <a href="../html/home.html">
+            <i class='bx bx-grid-alt'></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+      </br>
+       <li>
+         <a href="../html/services.html">
+           <i class='bx bx-cart-alt' ></i>
+           <span class="links_name">Services</span>
+         </a>
+       </li>
+      </br>
+       <li>
+        <a href="../html/profile.html">
+          <i class='bx bx-user' ></i>
+          <span class="links_name">Profile</span>
+        </a>
+      </li>
+      </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <li>
+        <a href="../html/contact.html">
+            <i class='bx bx-chat' ></i>
+            <span class="links_name">Contact</span>
+        </a>
+    </li>
+    </ul>
+    </div>
+    <section class="page_name">
+        <div class="text">Profile</div>
+    </section>
+    <script type="text/javascript">
+    let navbar = document.querySelector(".navbar");
+    let closeBtn = document.querySelector("#btn");
+    closeBtn.addEventListener("click", ()=>{
+      navbar.classList.toggle("open");
+    });
+    </script>
+
+    <!-- Profile Cards (Got help from LearningRobo) -->
+
+    <div class="profile-cards">
+      <div class="card1">
+          <div class="card">
+              <div class="left-container">
+                <img src="../img/haeden_cropped.png" alt="Profile Image">
+                <h2 class="title">Haeden</h2>
+                <p>Pet Owner</p>
+              </div>
+              <div class="right-container">
+              </br>
+                <h3 class="title">Profile Details</h3>
+                <table>
+                </br>
+                  <tr>
+                    <td>Age:</td>
+                    <td>19</td>
+                  </tr>
+                  <tr>
+                    <td>Mobile:</td>
+                    <td>+91 XXXXXXXXXX</td>
+                  </tr>
+                  <tr>
+                    <td>Email:</td>
+                    <td>hrp2029@nyu.edu</td>
+                  </tr>
+                  <tr>
+                    <td>Address:</td>
+                    <td>123, Fourfive, NY</td>
+                  </tr>
+                  <tr>
+                    <td>Amount of Pets:</td>
+                    <td>2</td>
+                  </tr>
+                </table>
+            </div>
+      </div>
+      </div>
+    </br>
+    </br>
+  </br>
+</br>
+</br>
+</br>
+</br>
+
+    <div class="card2">
+      <div class="card">
+          <div class="left-container">
+            <img src="../img/husky.jpeg" alt="Profile Image">
+            <h2 class="title">Jimbob</h2>
+            <p>Dog</p>
+          </div>
+          <div class="right-container">
+          </br>
+            <h3 class="title">Profile Details</h3>
+            <table>
+                <tr>
+                    <td>Breed:</td>
+                    <td>Husky</td>
+                  </tr>
+              <tr>
+                <td>Age:</td>
+                <td>3 years old</td>
+              </tr>
+              <tr>
+                <td>Sex:</td>
+                <td>Male</td>
+              </tr>
+              <tr>
+                <td>Latest Appointment :</td>
+                <td>Walker on April 30</td>
+              </tr>
+            </table>
+        </div>
+        </div>
+        </div>
+      </br>
+    </br>
+  </br>
+
+    <div class="card3">
+      <div class="card">
+          <div class="left-container">
+            <img src="../img/persian_cat.jpeg" alt="Profile Image">
+            <h2 class="title">Waffle</h2>
+            <p>Cat</p>
+          </div>
+          <div class="right-container">
+          </br>
+
+            <h3 class="title">Profile Details</h3>
+            <table>
+              <tr>
+                <td>Breed:</td>
+                <td>Persian Longhair</td>
+              </tr>
+          <tr>
+            <td>Age:</td>
+            <td>1 year old</td>
+          </tr>
+          <tr>
+            <td>Sex:</td>
+            <td>Female</td>
+          </tr>
+          <tr>
+            <td>Latest Appointment:</td>
+            <td> Vet on April 23</td>
+          </tr>
+          </table>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

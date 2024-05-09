@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PetPals Pet Services</title>
+    <link rel="stylesheet" href="../css/services.css" />
+  <!-- Nav Bar Boxicons Link -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+ <!-- Nav Bar -->
+ <div class="navbar">
+  <div class="company-details">
+   <i class='bx bxs-dog' id="dog"></i>
+      <div class="company_name">PetPals</div>
+      <i class='bx bx-menu' id="btn" ></i>
+  </div>
+     <ul class="nav-list">
+      <li>
+        <a href="../html/home.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+      </li>
+    </br>
+     <li>
+       <a href="../html/services.html">
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">Services</span>
+       </a>
+     </li>
+    </br>
+     <li>
+      <a href="../html/profile.html">
+        <i class='bx bx-user' ></i>
+        <span class="links_name">Profile</span>
+      </a>
+    </li>
+    </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+</br>
+  <li>
+      <a href="../html/contact.html">
+          <i class='bx bx-chat' ></i>
+          <span class="links_name">Contact</span>
+      </a>
+  </li>
+  </ul>
+   </div>
+   <section class="page_name">
+       <div class="text">Services</div>
+   </section>
+
+  <!-- Javascript (Nav bar & Appointment Button) -->
+   <script type="text/javascript">
+   let navbar = document.querySelector(".navbar");
+   let closeBtn = document.querySelector("#btn");
+   closeBtn.addEventListener("click", ()=>{
+     navbar.classList.toggle("open");
+   });
+
+  function changeColor(event){
+    var color = "#c2ce69";
+    event.style.backgroundColor = color
+  }
+   </script>
+
+   <!-- Services Categories -->
+  <div class="services">
+    <!-- Help from W3 Schools -->
+    <div class="row1">
+      <div class="service">
+        <img src="../img/f_vet.png" alt="Avatar" style="width:100%">
+        <div class="info">
+          <h4><b>Vet</b></h4>
+          <a href="#vet" class="button" type="button">See Availabilities</a>
+        </div>
+      </div>
+
+      <div class="service">
+        <img src="../img/f_sitter.png" alt="Avatar" style="width:100%">
+        <div class="info">
+          <h4><b>Sitter</b></h4>
+          <a href="#sitter" class="button" type="button">See Availabilities</a>
+        </div>
+      </div>
+
+      <div class="service">
+        <img src="../img/f_walker.png" alt="Avatar" style="width:100%">
+        <div class="info">
+          <h4><b>Dog Walker</b></h4>
+          <a href="#walker" class="button" type="button">See Availabilities</a>
+        </div>
+      </div>
+    </div>  
+
+
+    <div class="row2">
+      <div class="service">
+        <img src="../img/f_groom.png" alt="Avatar" style="width:100%">
+        <div class="info">
+          <h4><b>Pet Grooming</b></h4>
+          <a href="#grooming" class="button" type="button">See Availabilities</a>
+        </div>
+        </div>
+  
+      <div class="service">
+        <img src="../img/f_delivery.png" alt="Avatar" style="width:100%">
+        <div class="info">
+          <h4><b>Snack Delivery</b></h4>
+          <a href="#delivery" class="button" type="button">See Availabilities</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- Modals -->
+  <div id="vet" class="info_modal">
+    <div>
+      <a href="#close" class="close">X</a>
+      <h5>Vet - $125/hr</h5>
+      <div class="providers">
+        <div class="provider_info">
+          <img src="../img/vet_chris.JPG" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Dr. Chris Johnson</b></h4>
+            <p>8:30am - 10:30am</p>
+            <p>Specialty: Cats & Dogs</p>
+            <p>Rating: 4.6/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Book Appointment</button>
+          </div>
+        </div>
+
+        <div class="provider_info">
+          <img src="../img/vet_amy.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Dr. Amy Vanderwood</b></h4>
+            <p>1:15pm - 3:15pm</p>
+            <p>Specialty: Dogs</p>
+            <p>Rating: 3.8/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Book Appointment</button>
+          </div>
+        </div>
+
+        <div class="provider_info">
+          <img src="../img/vet_martha.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Dr. Martha Sawyer</b></h4>
+            <p>4:00pm - 6:00pm</p>
+            <p>Specialty: Cats</p>
+            <p>Rating: 5/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Book Appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="sitter" class="info_modal">
+    <div>
+      <a href="#close" class="close">X</a>
+      <h5>Sitter - $30/hr</h5>
+      <div class="providers">
+        <div class="provider_info">
+          <img src="../img/sitter_amber.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Amber Combs</b></h4>
+            <p>8:30am - 10:30am</p>
+            <p>Specialty: Cats & Dogs</p>
+            <p>Rating: 4.6/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Book Appointment</button>
+          </div>
+        </div>
+
+        <div class="provider_info">
+          <img src="../img/sitter_arthur.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Arthur Marks</b></h4>
+            <p>1:15pm - 3:15pm</p>
+            <p>Specialty: Dogs</p>
+            <p>Rating: 4.8/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Book Appointment</button>
+          </div>
+        </div>
+
+        <div class="provider_info">
+          <img src="../img/sitter_olive.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Olive Sparks</b></h4>
+            <p>4:00pm - 6:00pm</p>
+            <p>Specialty: Cats</p>
+            <p>Rating: 4.1/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Book Appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="walker" class="info_modal">
+    <div>
+      <a href="#close" class="close">X</a>
+      <h5>Dog Walker - $30/hr</h5>
+      <div class="providers">
+        <div class="provider_info">
+          <img src="../img/walker_Joey.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Joey Valence</b></h4>
+            <p>10:00am - 11:00am</p>
+            <p>Rating: 4.3/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Book Appointment</button>
+          </div>
+        </div>
+
+        <div class="provider_info">
+          <img src="../img/walker_Bella.JPG" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Bella Saunders</b></h4>
+            <p>2:25pm - 3:25pm</p>
+            <p>Rating: 4.8/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Book Appointment</button>
+          </div>
+        </div>
+
+        <div class="provider_info">
+          <img src="../img/walker_Sam.JPG" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Sam Hayes</b></h4>
+            <p>3:00pm - 4:00pm</p>
+            <p>Rating: 4/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Book Appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="grooming" class="info_modal">
+    <div>
+      <a href="#close" class="close">X</a>
+      <h5>Pet Grooming - $55/hr</h5>
+      <div class="providers">
+        <div class="provider_info">
+          <img src="../img/provider_jiafei.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Jiafei Dai</b></h4>
+            <p>9:30am - 10:30am</p>
+            <p>Specialty: Cats & Dogs</p>
+            <p>Rating: 4/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Book Appointment</button>
+          </div>
+        </div>
+
+        <div class="provider_info">
+          <img src="../img/provider_max.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Max Smith</b></h4>
+            <p>12:15pm - 1:15pm</p>
+            <p>Specialty: Dogs</p>
+            <p>Rating: 3.5/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Book Appointment</button>
+          </div>
+        </div>
+
+        <div class="provider_info">
+          <img src="../img/provider-emma.jpg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Emma Jones</b></h4>
+            <p>4:00pm - 5:00pm</p>
+            <p>Specialty: Cats</p>
+            <p>Rating: 5/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Book Appointment</button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div id="delivery" class="info_modal">
+    <div>
+      <a href="#close" class="close">X</a>
+      <h5>Snack Delivery - 7am to 9pm</h5>
+      <div class="providers">
+        <div class="provider_info">
+          <img src="../img/sd_meowmix.jpeg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Meow Mix Irresistibles</b></h4>
+            <p>$6.12, 12oz</p>
+            <p>For: Cats</p>
+            <p>Rating: 4.7/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Order Delivery</button>
+          </div>
+        </div>
+
+        <div class="provider_info">
+          <img src="../img/sd_begginbacon.jpeg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Purina Beggin' Bacon Strips</b></h4>
+            <p>$6.12, 12 oz</p>
+            <p>For: Dogs</p>
+            <p>Rating: 4.2/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Order Delivery</button>
+          </div>
+        </div>
+
+        <div class="provider_info">
+          <img src="../img/sd_temptationsturkey.jpeg" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Temptations Turkey Treats</b></h4>
+            <p>$3.85, 6.3oz</p>
+            <p>For: Cats</p>
+            <p>Rating: 5/5 stars</p>
+            <button class = ap_btn onclick="changeColor(event)">Order Delivery</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </body>
+ </html>

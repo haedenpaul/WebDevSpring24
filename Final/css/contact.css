@@ -1,0 +1,239 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+
+/* Nav Bar */
+.navbar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 78px;
+  background: #fc7ac4;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.navbar.open{
+  width: 250px;
+}
+.navbar .company-details{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.navbar .company-details .i{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.navbar .company-details .company_name, 
+.navbar .company-details #dog{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.navbar.open .company-details,
+.navbar.open .company-details .company_name, 
+.navbar.open .company-details #dog{
+  opacity: 1;
+}
+.navbar .company-details #btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.navbar.open .company-details #btn{
+  text-align: right;
+}
+.navbar i{
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.navbar .nav-list{
+  margin-top: 20px;
+  height: 100%;
+}
+.navbar li{
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+
+.navbar li a{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #fc7ac4;
+}
+.navbar li a:hover{
+  background: #FFF;
+}
+.navbar li a .links_name{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.navbar.open li a .links_name{
+  opacity: 1;
+  pointer-events: auto;
+}
+.navbar li a:hover .links_name,
+.navbar li a:hover i{
+  transition: all 0.5s ease;
+  color: #fc7ac4;
+}
+.navbar li i{
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  border-radius: 12px;
+}
+
+/* Page Content */
+.page_name{
+  position: relative;
+  background: #fef3e4;
+  min-height: 100vh;
+  top: 0;
+  left: 78px;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.navbar.open ~ .page_name{
+  left: 250px;
+  width: calc(100% - 250px);
+}
+.page_name .text{
+  display: inline-block;
+  color: #fc7ac4;
+  font-size: 28px;
+  font-weight: 500;
+  margin: 18px
+}
+
+/* Contact Form */
+
+body{
+  display: flex;
+  align-items: center;
+  background:#fef3e4;
+  position: relative;
+}
+
+.contact-form{
+  max-width: 1000px;
+  min-width: 700px;
+  width: 100%;
+  height:525px;
+  background: #fff;
+  border-radius: 12px;
+  margin: 0 240px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.contact-form .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+
+.content .topic{
+  font-size: 22px;
+  font-weight: 500;
+  color: #fc7ac4;
+  padding: 5px;
+}
+.content form{
+  width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.content .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 16px 0;
+  position: relative;
+}
+.content .input-box input,
+.content .message-box textarea{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 16px;
+  background: #ffedf8;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.content .message-box textarea{
+  padding-top: 10px;
+}
+
+.content .message-box{
+  min-height: 120px;
+  position: relative;
+}
+
+/* Button that sends message via CodingNepal */
+
+.content .input-box input[type="submit"]{
+  color: #fff;
+  background: #fc7ac4;
+  height: 60px;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.content .input-box input[type="submit"]:hover{
+  background-color: #fe3caa;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px){
+  .contact-form{
+    min-width: 400px;
+    width: 100%;
+    height:525px;
+    background: #fff;
+    border-radius: 12px;
+    margin: 0;
+    margin-right: 60px;
+    z-index: 10;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+}
